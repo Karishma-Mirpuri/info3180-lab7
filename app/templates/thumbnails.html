@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+ 
+{% block main %}
+
+{% raw %}   
+ 
+<div ng-app="myThumbnails" ng-controller="myCtrl" class="row">
+    <div ng-repeat="thumbnail in myThumbnail track by $index" class="col-md-4, img-thumbnail">
+        <img src="{{thumbnail}}"/><br>
+    </div>
+</div>
+
+{% endraw %}
+
+{% endblock %}
